@@ -4,7 +4,7 @@ import styles from './PostsTable.module.css';
 const PostsTable = ( props ) => {
 
     return (
-        <table className="table">
+        <table className="table" style={{width: '80%', marginLeft: 'auto', marginRight: 'auto'}}>
             <thead>
                 <tr>
                     <th scope="col">Nr</th>
