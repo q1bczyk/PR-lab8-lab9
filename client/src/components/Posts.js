@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from './Posts.module.css';
 import axios from 'axios';
+import PostsTable from "./PostsTable";
 
 const Posts = () => {
 
@@ -20,9 +21,7 @@ const Posts = () => {
     }, [])
 
     return(
-        <div>
-            
-        </div>
+        <PostsTable posts={posts}/>
     )
 
 }
