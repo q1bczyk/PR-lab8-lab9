@@ -19,6 +19,9 @@ const PostsTable = ( props ) => {
                     <td>{item.title}</td>
                     <td>{item.text}</td>
                     <td><img style={{width: '50px', height: '50px'}} src={item.image} alt={key}/></td>
+                    <td>
+                        <button onClick={() => props.onDelete(item.id)} className="btn btn-danger">Delete</button>
+                    </td>
                 </tr>
                 ))}
             </tbody>
